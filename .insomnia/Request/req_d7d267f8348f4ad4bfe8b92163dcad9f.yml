@@ -1,0 +1,30 @@
+_id: req_d7d267f8348f4ad4bfe8b92163dcad9f
+type: Request
+parentId: fld_7e07743a8f9647779cda603d3f764eb5
+modified: 1629828551424
+created: 1629828364995
+url: "{{ base_url }}/reference-types/{{
+  referenceType_earningCode}}?pageSize=20&page=1"
+name: Get EarningCode
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_790b04c497f64a66954f48ecc9eb46d5
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_f64381e5b3844c98b01f43121960cd7c
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+authentication: {}
+metaSortKey: -1629824676172.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

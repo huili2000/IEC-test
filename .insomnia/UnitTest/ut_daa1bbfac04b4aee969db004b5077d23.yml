@@ -1,0 +1,10 @@
+_id: ut_daa1bbfac04b4aee969db004b5077d23
+type: UnitTest
+parentId: uts_b61d7f4a447748cc867b676d78322f5c
+modified: 1629999827906
+created: 1629999789385
+requestId: req_ab30c8d3b29945d78f6359c7d51fb1e5
+name: Get Not Found
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(404);

@@ -1,0 +1,31 @@
+_id: req_185f9b687fbb4028862fe2c88f3c0263
+type: Request
+parentId: fld_513fa3ae662a43f18c25df937d53ae63
+modified: 1629830578387
+created: 1629830549174
+url: "{{ base_url }}/job-positions/{{
+  reference_id_cost_allocation}}/workerAppointments/employee_id::1835998/costin\
+  gAllocations?page=1&pageSize=10&date=2020-03-22"
+name: Get All Cost Center Allocations Not Within Date Range
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_844dc1970b734a70b58771ed5950a5bb
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_caae13cc46ae4d228000af80be56e4b1
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+authentication: {}
+metaSortKey: -1629800852915.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

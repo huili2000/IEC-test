@@ -1,0 +1,10 @@
+_id: ut_3b778e30eefc4edb9f89ffdd4c654b3b
+type: UnitTest
+parentId: uts_250f77543a624687a05bd3ed2ace6675
+modified: 1629833143123
+created: 1629832756719
+requestId: req_ad705605b4c24bbc990293be7843b1e4
+name: Put Worker Certificate
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

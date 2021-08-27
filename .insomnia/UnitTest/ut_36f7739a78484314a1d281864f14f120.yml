@@ -1,0 +1,10 @@
+_id: ut_36f7739a78484314a1d281864f14f120
+type: UnitTest
+parentId: uts_4e29e2f1cb1a4d83a1f00a1793b2449d
+modified: 1629833468603
+created: 1629833384367
+requestId: req_d7d267f8348f4ad4bfe8b92163dcad9f
+name: Get EarningCode
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

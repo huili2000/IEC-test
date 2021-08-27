@@ -1,0 +1,10 @@
+_id: ut_3328ccdc091041ef9d0574b0bac9766e
+type: UnitTest
+parentId: uts_5242e19fe9dc4fa28b08bef5c94466a5
+modified: 1629832040956
+created: 1629831990581
+requestId: req_07340a3bb6364594b070ebf0281016f0
+name: Get All Cost Center Allocation Within  Date Range
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

@@ -1,0 +1,22 @@
+_id: env_47d2155722888ee620475dfaafc2ea63d1c88469
+type: Environment
+parentId: wrk_284ddf7563744993b7e25ac65a29c10c
+modified: 1629779938918
+created: 1629394556745
+name: Base environment
+data:
+  base_url: "{{ scheme }}://{{ host }}/{{ base_path }}/{{ version }}"
+  base_url_ph: "{{ scheme }}://{{ host_ph }}/person-hub/{{ version_ph }}"
+  petid: petid
+  x-client-id: "{{ _['x-client-id'] }}"
+  x-client-secret: "{{ _['x-client-secret'] }}"
+dataPropertyOrder:
+  "&":
+    - base_url
+    - base_url_ph
+    - petid
+    - x-client-id
+    - x-client-secret
+color: null
+isPrivate: false
+metaSortKey: 1629394556745

@@ -1,0 +1,10 @@
+_id: ut_7e37e6fd5b2b4f5894d3359585ff5f96
+type: UnitTest
+parentId: uts_b61d7f4a447748cc867b676d78322f5c
+modified: 1629994680306
+created: 1629994673016
+requestId: req_d2f4ed80177545d591a9537a548cbde9
+name: "Get New Person with Bio Demo Data Only "
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

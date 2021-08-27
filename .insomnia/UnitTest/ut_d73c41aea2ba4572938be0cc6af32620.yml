@@ -1,0 +1,10 @@
+_id: ut_d73c41aea2ba4572938be0cc6af32620
+type: UnitTest
+parentId: uts_b61d7f4a447748cc867b676d78322f5c
+modified: 1630004405998
+created: 1630004116657
+requestId: req_7229eee34d71457598f29bab81faddc3
+name: GET person after Employee_ID (SP_UID))
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

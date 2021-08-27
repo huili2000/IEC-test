@@ -1,0 +1,10 @@
+_id: ut_41eee4a7522d4e5ba788d86150594382
+type: UnitTest
+parentId: uts_250f77543a624687a05bd3ed2ace6675
+modified: 1629833015755
+created: 1629832573052
+requestId: req_8c5f4e79ffb648d188345d8564c93279
+name: Get All Worker Time-Offs
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

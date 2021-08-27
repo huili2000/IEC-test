@@ -1,0 +1,10 @@
+_id: ut_87d6e92216784c48a8a95a6b8788bcc1
+type: UnitTest
+parentId: uts_250f77543a624687a05bd3ed2ace6675
+modified: 1629833156067
+created: 1629832774031
+requestId: req_a4a8426301584b41af1d8f96a3d76f9e
+name: Get PM State
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

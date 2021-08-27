@@ -1,0 +1,15 @@
+_id: ut_a14de85603d14cd090bbf3d8fffae982
+type: UnitTest
+parentId: uts_b61d7f4a447748cc867b676d78322f5c
+modified: 1630008704183
+created: 1629994701004
+requestId: req_aae847a35ebc4dcb9d737f59df177266
+name: Create new person with EPBC_USER_ID and EPBC Alternate names
+code: |-
+  var req = insomnia.get('req_aae847a35ebc4dcb9d737f59df177266');
+  var data = JSON.parse(req.data);
+
+  console.log("Json --- " + data);
+
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

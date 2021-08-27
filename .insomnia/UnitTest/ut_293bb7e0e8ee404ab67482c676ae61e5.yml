@@ -1,0 +1,23 @@
+_id: ut_293bb7e0e8ee404ab67482c676ae61e5
+type: UnitTest
+parentId: uts_9fe802cfe3694ac3a8ffb722610ce4f4
+modified: 1630014872749
+created: 1630008928779
+requestId: req_07473ffcfe7c4c9fa66910e625f8fe0c
+name: EPBC
+code: |-
+  
+
+  var a = insomnia.environments
+
+
+  const request = new Request('https://www.mozilla.org/favicon.ico');
+
+  var data = insomnia.req;
+
+  console.log("Json --- " + data);
+
+  const response1 = await insomnia.send();
+
+  console.log("Json --- " +  response1.data );
+  //expect(response1.status).to.equal(200);

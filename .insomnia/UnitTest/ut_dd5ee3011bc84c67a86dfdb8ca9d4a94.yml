@@ -1,0 +1,10 @@
+_id: ut_dd5ee3011bc84c67a86dfdb8ca9d4a94
+type: UnitTest
+parentId: uts_b61d7f4a447748cc867b676d78322f5c
+modified: 1630006108290
+created: 1630004254781
+requestId: req_949a8bbc3045499f92061b3680b037d1
+name: Get person with existing Employee ID (Employee_id)
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

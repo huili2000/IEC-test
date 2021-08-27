@@ -1,0 +1,29 @@
+_id: req_af8fb5922cd04ed09dfb95e34f61408c
+type: Request
+parentId: fld_718a622ebf3f4de9bdc09f3d89bcb36e
+modified: 1629824264197
+created: 1629749480798
+url: "{{ base_url }}/worker-absences?pageSize=10&page=1"
+name: Get All Worker Absents [/work-absent]
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_bdc7ad25d8cf46baaf4954c7786c488a
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_8554994a8030420aad330781f92df28c
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+authentication: {}
+metaSortKey: -1629749432904
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

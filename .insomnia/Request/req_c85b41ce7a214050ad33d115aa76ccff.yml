@@ -1,0 +1,29 @@
+_id: req_c85b41ce7a214050ad33d115aa76ccff
+type: Request
+parentId: fld_7301d6bc53a04d02bc2f3a8138148ddd
+modified: 1629828887178
+created: 1629765445046
+url: "{{ base_url }}/certifications?page=1&pageSize=10"
+name: All Certifications [/certifications]
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_2496839570284f1292105dc2389e4828
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_97b3bfc25254457ca18fcbcc1f1aca23
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+authentication: {}
+metaSortKey: -1629765445046
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

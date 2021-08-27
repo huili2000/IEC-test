@@ -1,0 +1,31 @@
+_id: req_48054662068a440f87c72ce6042b25db
+type: Request
+parentId: fld_323d753adbfc47c98adb6cee56d47276
+modified: 1629778230758
+created: 1629751406614
+url: "{{base_url}}/academic-appointments/{% response 'body',
+  'req_29e29ac7396c44409c85693867c57adc',
+  'b64::JC5wYWdlSXRlbXNbMF0uYWNhZGVtaWNBcHBvaW50bWVudElk::46b', 'always', 60 %}"
+name: Academic Appointments [/academic-appointments/{academicAppointmentid}]
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_5032cd2c88f541c2a81d6fe3d69871d6
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_946238b7e23d4b1ba149b4536710599b
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+authentication: {}
+metaSortKey: -1629749480846
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,32 @@
+_id: req_0e0132f25d434eae80b9c5d787d7f551
+type: Request
+parentId: fld_a8b15cdb592640a0b796def3d9736394
+modified: 1629831266427
+created: 1629756541892
+url: "{{ base_url }}/academic-unit-hierarchies/academicUnitId::{% response
+  'body', 'req_4f4d2583ab8844948c2c45b411cafde8',
+  'b64::JC5wYWdlSXRlbXNbMF0ucmVmZXJlbmNlSWQ=::46b', 'always', 60 %}"
+name: One Academic Unit Hierarchy Exists using AcademicUnitId
+  [/academic-unit-hierarchies/{referenceId}]
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_8a215fa592c14d178ced4441e80b0f23
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_8af12d895a25407098744632ca19f19d
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+authentication: {}
+metaSortKey: -1629749480646
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

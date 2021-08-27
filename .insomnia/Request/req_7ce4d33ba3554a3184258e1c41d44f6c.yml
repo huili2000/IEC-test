@@ -1,0 +1,48 @@
+_id: req_7ce4d33ba3554a3184258e1c41d44f6c
+type: Request
+parentId: fld_2f1a300aa36f458e9394f8c3bcbd8a82
+modified: 1630005702415
+created: 1630000742389
+url: "{{ base_url_ph}}/retrieve-person-identifiers"
+name: Generate Employee_ID with createIfMissing false (SP_PUID)
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"identifier" :"{% response 'body', 'req_d24f82f8856e408fb9242283cf995f1c', 'b64::JC5wdWlk::46b', 'always', 60 %}",
+    	"identifierType" : "PUID",
+    	"requestedIdentifiers" : [
+    		{
+    			"identifierType" : "Employee_ID",
+    			"createIfMissing" : false
+    		},
+    		{
+    			"identifierType" : "UBC_ID",
+    			"createIfMissing" : false
+    		}
+    	]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_45c88fedb62b4da18b67899136331658
+  - id: pair_5a3c8b7650514bd395103ad57e0a679b
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_e369a9dc50ee4e338283e0590f092fe1
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+authentication: {}
+metaSortKey: -1629767328696.125
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

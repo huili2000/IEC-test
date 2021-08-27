@@ -1,0 +1,10 @@
+_id: ut_bfbe3e7512a4401caef3812d1e7f4cec
+type: UnitTest
+parentId: uts_5242e19fe9dc4fa28b08bef5c94466a5
+modified: 1629831766348
+created: 1629831745018
+requestId: req_040a7da71c694338bf0754d337f593d0
+name: Get All Job Positions
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

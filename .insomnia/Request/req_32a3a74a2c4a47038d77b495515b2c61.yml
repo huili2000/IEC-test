@@ -1,0 +1,29 @@
+_id: req_32a3a74a2c4a47038d77b495515b2c61
+type: Request
+parentId: fld_718a622ebf3f4de9bdc09f3d89bcb36e
+modified: 1629824784589
+created: 1629824644052
+url: "{{ base_url }}/time-offs/FAKE"
+name: Get Worker Time Off Not Exists [/time-offs/{referenceId}]
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_bdc7ad25d8cf46baaf4954c7786c488a
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_8554994a8030420aad330781f92df28c
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+authentication: {}
+metaSortKey: -1629568537059
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

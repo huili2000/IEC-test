@@ -1,0 +1,51 @@
+_id: ut_c4c7785ffeee452f8556f89a0f67ff8a
+type: UnitTest
+parentId: uts_250f77543a624687a05bd3ed2ace6675
+modified: 1629953224549
+created: 1629832828570
+requestId: req_a4a8426301584b41af1d8f96a3d76f9e
+name: Validate PM Status
+code: >-
+  var pmMaxElapsedTime = 600;
+
+  var startTime = 1629825632223;
+
+  var currentTime = Date.now();
+
+  var elapseTime = (currentTime - startTime)/1000;
+
+
+  var responseStatus = null;
+
+  var secondRun =  false;
+
+
+  const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
+
+
+  while(true){
+  	const response1 = await insomnia.send();
+  	const data = JSON.parse(response1.data);
+  	
+  	responseStatus = response1.status;
+  	if(data.status != "COMPLETED_SUCCESS"){	
+  		if (elapseTime >= pmMaxElapsedTime){
+  			console.log("Max elapsed time exceeded while waiting for pid to finish, currentStatus= " + response1.status);
+  			break;
+  		}else if (response1.status == "RUNNING") {
+  			if(!secondRun){	
+  				secondRun = true;
+  				await delay(2000);
+  			}else{
+  				break;
+  			}
+  		}else{
+  			break;
+  		}
+  	} else {
+  		break;
+  	} 
+  }
+
+
+  expect(responseStatus).to.equal(200);

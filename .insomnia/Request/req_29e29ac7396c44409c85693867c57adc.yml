@@ -1,0 +1,29 @@
+_id: req_29e29ac7396c44409c85693867c57adc
+type: Request
+parentId: fld_323d753adbfc47c98adb6cee56d47276
+modified: 1629765734702
+created: 1629751530231
+url: "{{ base_url }}//academic-appointments?pageSize=10&page=1"
+name: Academic Appointments [/academic-appointments]
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_2379221c93fb4823b22dedc26fd3cc7c
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_62aeb72da42348a69df2fb13e2b87e8f
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+authentication: {}
+metaSortKey: -1629749480896
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

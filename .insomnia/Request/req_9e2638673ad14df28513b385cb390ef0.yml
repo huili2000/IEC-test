@@ -1,0 +1,31 @@
+_id: req_9e2638673ad14df28513b385cb390ef0
+type: Request
+parentId: fld_718a622ebf3f4de9bdc09f3d89bcb36e
+modified: 1629840944515
+created: 1629824520164
+url: "{{ base_url }}/time-offs/{% response 'body',
+  'req_8c5f4e79ffb648d188345d8564c93279', 'b64::JC5wYWdlSXRlbXNbMF0uaWQ=::46b',
+  'always', 60 %}"
+name: Get Worker Time Off [/time-offs/{referenceId}?pageSize=10&page=1]
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_bdc7ad25d8cf46baaf4954c7786c488a
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_8554994a8030420aad330781f92df28c
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+authentication: {}
+metaSortKey: -1629580596782
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

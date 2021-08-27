@@ -1,0 +1,35 @@
+_id: req_7229eee34d71457598f29bab81faddc3
+type: Request
+parentId: fld_2f1a300aa36f458e9394f8c3bcbd8a82
+modified: 1630002099360
+created: 1630001029270
+url: "{{ base_url_ph }}\\persons\\puid::{% response 'body',
+  'req_c638aacbe9df43168dc6c9382c56c4f8', 'b64::JC5wdWlk::46b', 'never', 60 %}"
+name: Get person after employee id (SP_PUID)
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - id: pair_dbdf58af43e542c79cfd61b02facded2
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_e30535269ec8442b808fbb5e89346c55
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+  - name: Content-Type
+    value: application/json
+    id: pair_3fe25f49a4ae4b81bed04f2fb19385b2
+authentication: {}
+metaSortKey: -1629767328596.125
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

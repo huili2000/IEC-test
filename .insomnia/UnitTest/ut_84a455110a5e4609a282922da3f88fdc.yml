@@ -1,0 +1,10 @@
+_id: ut_84a455110a5e4609a282922da3f88fdc
+type: UnitTest
+parentId: uts_5aa74ec18fbe44758010d06da9025553
+modified: 1629839644611
+created: 1629832253377
+requestId: req_ddcd9539f82140749e53f9aec7008d4f
+name: Get All Supervisory Hierarchies
+code: |
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

@@ -1,0 +1,10 @@
+_id: ut_e8688a01dc70418d87ab07da3671965c
+type: UnitTest
+parentId: uts_dbbe5809b59c43da85d9351ea06fcd00
+modified: 1629833543170
+created: 1629833536724
+requestId: req_b72929ab1eec4e919f99f426a7c41112
+name: Get All Workers Certifications
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

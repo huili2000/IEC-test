@@ -1,0 +1,35 @@
+_id: req_0c89f2f7ba33452d808c28a5cba0fd39
+type: Request
+parentId: fld_2f1a300aa36f458e9394f8c3bcbd8a82
+modified: 1629999290641
+created: 1629993540487
+url: "{{ base_url_ph }}/persons/puid::{% response 'body',
+  'req_aae847a35ebc4dcb9d737f59df177266', 'b64::JC5wdWlk::46b', 'never', 60 %}"
+name: Get new person with EPBC_USER_ID and EPBC Alternate names
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_3e9d3f9033724242bd2c15ec70560b76
+  - id: pair_a36c73b4088147a799c1097db366377e
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_17967d2a117241748f6efd29ecefd839
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+authentication: {}
+metaSortKey: -1629772979946.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

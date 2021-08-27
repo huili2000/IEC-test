@@ -1,0 +1,10 @@
+_id: ut_4b8c020a219044d4a43ce14c64cc0152
+type: UnitTest
+parentId: uts_250f77543a624687a05bd3ed2ace6675
+modified: 1629833314995
+created: 1629832641159
+requestId: req_32a3a74a2c4a47038d77b495515b2c61
+name: Get One Worker Time-Off Not Exists
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(404);

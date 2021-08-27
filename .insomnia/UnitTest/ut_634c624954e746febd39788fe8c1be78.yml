@@ -1,0 +1,10 @@
+_id: ut_634c624954e746febd39788fe8c1be78
+type: UnitTest
+parentId: uts_02e0474c8e2842c5b12641cd7c80839d
+modified: 1629754663916
+created: 1629563264944
+requestId: req_48054662068a440f87c72ce6042b25db
+name: get one academic appointment exists
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

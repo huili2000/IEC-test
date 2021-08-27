@@ -1,0 +1,10 @@
+_id: ut_7f9dc2bd18a348c187a83d91316f132a
+type: UnitTest
+parentId: uts_b61d7f4a447748cc867b676d78322f5c
+modified: 1630004775373
+created: 1630004618108
+requestId: req_91fb082aa15f47fa891cdfa1d78dfe4b
+name: Merge Person - Create person 1
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(201);

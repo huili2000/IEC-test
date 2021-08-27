@@ -1,0 +1,10 @@
+_id: ut_b6c96fc37800418eb6d489c6df23b8a7
+type: UnitTest
+parentId: uts_4e29e2f1cb1a4d83a1f00a1793b2449d
+modified: 1629833480090
+created: 1629833425626
+requestId: req_592bc0a8663f4de0a8c57bea66cf5b23
+name: Get FunctionalHierarchyLevel
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

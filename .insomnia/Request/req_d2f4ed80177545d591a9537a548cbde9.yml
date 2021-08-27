@@ -1,0 +1,36 @@
+_id: req_d2f4ed80177545d591a9537a548cbde9
+type: Request
+parentId: fld_2f1a300aa36f458e9394f8c3bcbd8a82
+modified: 1630005669625
+created: 1629993322833
+url: "{{ base_url_ph }}/persons/puid::{% response 'body',
+  'req_cdc3e29a17224b449caa859e83e10c77', 'b64::JC5wdWlk::46b', 'always', 60 %}"
+name: Get person with bio demo data
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - id: pair_af77232573ae4e359e45020e44f72326
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_cfa536a8f735434e859315629c71e936
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+  - id: pair_fcb8a650e62147ed9a1ef8ad19708278
+    name: content-type
+    value: application/json
+    description: ""
+authentication: {}
+metaSortKey: -1629780514872
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

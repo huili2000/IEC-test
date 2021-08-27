@@ -1,0 +1,10 @@
+_id: ut_efe4f5c156464d9093b326702f2985cc
+type: UnitTest
+parentId: uts_22d83e254985401b99c61452f3d76db5
+modified: 1629831651465
+created: 1629765283263
+requestId: req_0e0132f25d434eae80b9c5d787d7f551
+name: Academic Unit Hierarchies using academic-unit-hierarchy_id
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

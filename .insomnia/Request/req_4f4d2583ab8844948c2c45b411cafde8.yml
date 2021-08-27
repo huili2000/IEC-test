@@ -1,0 +1,29 @@
+_id: req_4f4d2583ab8844948c2c45b411cafde8
+type: Request
+parentId: fld_a8b15cdb592640a0b796def3d9736394
+modified: 1629831187433
+created: 1629754460509
+url: "{{ base_url }}/academic-unit-hierarchies?pageSize=10&page=1"
+name: All Academic Unit Hierarchies
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_e90fa803167b48ebba0ec93676096fc6
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_34a2a0bde0d54e1fb2773f5d8f85dd71
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+authentication: {}
+metaSortKey: -1629749480696
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

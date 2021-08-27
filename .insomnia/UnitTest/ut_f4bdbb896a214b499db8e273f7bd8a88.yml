@@ -1,0 +1,10 @@
+_id: ut_f4bdbb896a214b499db8e273f7bd8a88
+type: UnitTest
+parentId: uts_250f77543a624687a05bd3ed2ace6675
+modified: 1629832958890
+created: 1629832394695
+requestId: req_ecd7858151684057be9636e38fa74d5a
+name: Get One Workers Exists
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

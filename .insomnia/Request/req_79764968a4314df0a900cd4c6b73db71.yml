@@ -1,0 +1,36 @@
+_id: req_79764968a4314df0a900cd4c6b73db71
+type: Request
+parentId: fld_2f1a300aa36f458e9394f8c3bcbd8a82
+modified: 1630002882463
+created: 1630001551139
+url: "{{ base_url_ph }}\\persons\\employee_id::{% response 'body',
+  'req_c832949358db456691ece7aff9ef7f85', 'b64::JFswXS5pZGVudGlmaWVy::46b',
+  'never', 60 %}"
+name: Get person after employee id (employee_id)
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - id: pair_dbdf58af43e542c79cfd61b02facded2
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_e30535269ec8442b808fbb5e89346c55
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+  - name: Content-Type
+    value: application/json
+    id: pair_3fe25f49a4ae4b81bed04f2fb19385b2
+authentication: {}
+metaSortKey: -1629766386696.0625
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

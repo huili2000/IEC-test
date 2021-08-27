@@ -1,0 +1,30 @@
+_id: req_ed33b51dbf7b400c911e9421c3ac8d7c
+type: Request
+parentId: fld_7e07743a8f9647779cda603d3f764eb5
+modified: 1629828510907
+created: 1629827975999
+url: "{{ base_url }}/reference-types/{{ referenceType_leaveType
+  }}?pageSize=20&page=1"
+name: LeaveType
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_790b04c497f64a66954f48ecc9eb46d5
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_f64381e5b3844c98b01f43121960cd7c
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+authentication: {}
+metaSortKey: -1629827976049
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

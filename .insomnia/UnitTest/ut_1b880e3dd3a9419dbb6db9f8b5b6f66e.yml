@@ -1,0 +1,10 @@
+_id: ut_1b880e3dd3a9419dbb6db9f8b5b6f66e
+type: UnitTest
+parentId: uts_b61d7f4a447748cc867b676d78322f5c
+modified: 1630004175942
+created: 1630003910878
+requestId: req_903e349cbfa94e42ac87c16ad74dcaba
+name: Create new person and generate SP_PUID
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(201);

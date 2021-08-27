@@ -1,0 +1,10 @@
+_id: ut_c4d0600a9ab843d192c4dcda6ad54174
+type: UnitTest
+parentId: uts_b61d7f4a447748cc867b676d78322f5c
+modified: 1629995153332
+created: 1629995039837
+requestId: req_d24f82f8856e408fb9242283cf995f1c
+name: Create new person with SIN
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(201);

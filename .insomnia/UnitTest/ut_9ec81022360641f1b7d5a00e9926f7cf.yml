@@ -1,0 +1,10 @@
+_id: ut_9ec81022360641f1b7d5a00e9926f7cf
+type: UnitTest
+parentId: uts_250f77543a624687a05bd3ed2ace6675
+modified: 1629833302998
+created: 1629832484351
+requestId: req_79c4f4b70dad4a659d06cdb44ec66143
+name: Get One Worker Invalid Reference Format
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(400);

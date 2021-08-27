@@ -1,0 +1,35 @@
+_id: req_20e8b57cb8124f36a684823e5f82ebe0
+type: Request
+parentId: fld_2f1a300aa36f458e9394f8c3bcbd8a82
+modified: 1630005685386
+created: 1629994244526
+url: "{{ base_url_ph }}\\persons\\puid::{% response 'body',
+  'req_d24f82f8856e408fb9242283cf995f1c', 'b64::JC5wdWlk::46b', 'always', 60 %}"
+name: Get new person with SIN
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - id: pair_dbdf58af43e542c79cfd61b02facded2
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_e30535269ec8442b808fbb5e89346c55
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+  - name: Content-Type
+    value: application/json
+    id: pair_3fe25f49a4ae4b81bed04f2fb19385b2
+authentication: {}
+metaSortKey: -1629772979896.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

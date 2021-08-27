@@ -1,0 +1,10 @@
+_id: ut_84cc1941c52344f3aeb9eaaef5e3e81f
+type: UnitTest
+parentId: uts_b61d7f4a447748cc867b676d78322f5c
+modified: 1629994719275
+created: 1629994711566
+requestId: req_0c89f2f7ba33452d808c28a5cba0fd39
+name: Get new person with EPBC_USER_ID and EPBC Alternate names
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

@@ -1,0 +1,44 @@
+_id: env_1a20711a5e3d4bbdb000eedad601f3b0
+type: Environment
+parentId: env_47d2155722888ee620475dfaafc2ea63d1c88469
+modified: 1629852425818
+created: 1629560629054
+name: Dev
+data:
+  scheme: https
+  base_path: hcm
+  host: dev.api.ubc.ca
+  host_ph: dev.internal.api.ubc.ca
+  version: v7
+  version_ph: v1
+  x-client-id: 93262fb888ea4455a119294d91a44fde
+  x-client-secret: F823663E432447D5A465e72638901c20
+  academicAppointmentId: FAKE
+  testCaseStartTime: $now()
+  referenceType_leaveType: leaveType
+  referenceType_earningCode: earningCode
+  referenceType_functionalHierarchyLevel: functionalHierarchyLevel
+  reference_id_cost_allocation: P000013028
+  pmMaxElapsedTim: "600"
+  startTime: "1629825632223"
+dataPropertyOrder:
+  "&":
+    - scheme
+    - base_path
+    - host
+    - host_ph
+    - version
+    - version_ph
+    - x-client-id
+    - x-client-secret
+    - academicAppointmentId
+    - testCaseStartTime
+    - referenceType_leaveType
+    - referenceType_earningCode
+    - referenceType_functionalHierarchyLevel
+    - reference_id_cost_allocation
+    - pmMaxElapsedTim
+    - startTime
+color: null
+isPrivate: false
+metaSortKey: 1629560629054

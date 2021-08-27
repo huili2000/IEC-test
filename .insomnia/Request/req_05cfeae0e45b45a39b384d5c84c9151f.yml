@@ -1,0 +1,30 @@
+_id: req_05cfeae0e45b45a39b384d5c84c9151f
+type: Request
+parentId: fld_a8b15cdb592640a0b796def3d9736394
+modified: 1629831406262
+created: 1629831317794
+url: "{{ base_url }}/academic-unit-hierarchies/academicUnitId::FAKE"
+name: One Academic Unit Hierarchy  Not Exists
+  [/academic-unit-hierarchies/{referenceId}]
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_8a215fa592c14d178ced4441e80b0f23
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_8af12d895a25407098744632ca19f19d
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+authentication: {}
+metaSortKey: -1629749444877
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

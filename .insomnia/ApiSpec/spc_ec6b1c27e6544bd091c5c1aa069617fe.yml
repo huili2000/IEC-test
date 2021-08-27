@@ -1,0 +1,68 @@
+_id: spc_ec6b1c27e6544bd091c5c1aa069617fe
+type: ApiSpec
+parentId: wrk_284ddf7563744993b7e25ac65a29c10c
+modified: 1629820498914
+created: 1629394556754
+fileName: IEC Insomnia test cases
+contents: >
+  #%RAML 1.0
+
+  title: IAM
+
+  documentation:
+    - title: Summary
+      content: !include descriptions/summary.md
+
+  types:
+    CommonErrorType: !include schemas/errorMessageType.raml
+    RetrievePersonRequest: !include schemas/retrievePersonRequest.raml
+    RetrievePersonResponse: !include schemas/retrievePersonResponse.raml
+
+  uses:
+    Security: libraries/security.raml
+    Traits: libraries/traits.raml
+
+  securedBy: Security.clientAuth2
+
+
+  /retrieve-person:
+    description: !include descriptions/retrievePerson.md
+    displayName: Retrieve Person
+    post:
+      displayName: Retrieve Person
+      description: The Retrieve Person details.
+      body:
+        application/json:
+          type: RetrievePersonRequest
+          examples: !include examples/PostRetrievePersonRequestExample.raml
+      responses:
+        "200":
+          body:
+            application/json:
+              type: RetrievePersonResponse
+              examples: !include examples/RetrievePersonResponseExample.raml
+        "400":
+          description: Bad request error (common message example in error 500).
+          body:
+            application/json:
+              example: !include examples/Error400ResponseExample.json
+              type: CommonErrorType
+        "401":
+          description: Unauthorized request error (common message example in error 500).
+        "404":
+          description: Resource not found error (common message example in error 500).
+        "405":
+          description: Method is not allowed error (common message example in error 500).
+        "406":
+          description: Not acceptable error (common message example in error 500).
+        "409":
+          description: State conflict error raised by an idempotent filter on PATCH, PUT, or POST when a duplicate call is detected (common message example in error 500).
+        "415":
+          description: Unsupported media type error (common message example in error 500).
+        "500":
+          description: All other implementation errors.
+          body:
+            application/json:
+              type: CommonErrorType
+              example: !include examples/Error500ResponseExample.json
+contentType: yaml

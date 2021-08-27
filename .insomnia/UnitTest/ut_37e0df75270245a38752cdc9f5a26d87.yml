@@ -1,0 +1,10 @@
+_id: ut_37e0df75270245a38752cdc9f5a26d87
+type: UnitTest
+parentId: uts_b61d7f4a447748cc867b676d78322f5c
+modified: 1630006132286
+created: 1630004480728
+requestId: req_531b5b72d7af4ea8b01b2b7e13cf47cc
+name: Create person using same Employee ID (employee id)
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(409);

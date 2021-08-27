@@ -1,0 +1,24 @@
+_id: req_f8c6f80e37914699ac47ad8aba0da10e
+type: Request
+parentId: fld_28c110a6262d4edca7d2d4887d2142f3
+modified: 1630020469501
+created: 1630020303047
+url: "{{ _.base_url }}/{% response 'body',
+  'req_0e0132f25d434eae80b9c5d787d7f551', 'b64::JC5pZA==::46b', 'never', 60
+  %}/{% response 'body', 'req_6f69031b42d44e269a270672e6e47ccf',
+  'b64::JA==::46b', 'never', 60 %}"
+name: My Request2
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1630020303048
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,32 @@
+_id: req_2ed09393db1d49bfb7507ddbe78603e9
+type: Request
+parentId: fld_718a622ebf3f4de9bdc09f3d89bcb36e
+modified: 1629824300803
+created: 1629822640433
+url: "{{ base_url }}/workers/employee_id::{% response 'body',
+  'req_af8fb5922cd04ed09dfb95e34f61408c',
+  'b64::JC5wYWdlSXRlbXNbMF0uZW1wbG95ZWVJZA==::46b', 'never', 60
+  %}/absences?pageSize=10&page=1"
+name: Get One Worker Absents [/workers/{workerReference}/absences]
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_bdc7ad25d8cf46baaf4954c7786c488a
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_8554994a8030420aad330781f92df28c
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+authentication: {}
+metaSortKey: -1629652955120
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

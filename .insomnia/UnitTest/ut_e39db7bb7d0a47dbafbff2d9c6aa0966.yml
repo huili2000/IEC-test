@@ -1,0 +1,10 @@
+_id: ut_e39db7bb7d0a47dbafbff2d9c6aa0966
+type: UnitTest
+parentId: uts_22d83e254985401b99c61452f3d76db5
+modified: 1629831679608
+created: 1629831600810
+requestId: req_05cfeae0e45b45a39b384d5c84c9151f
+name: Academic Hierarchy Not exists
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(404);

@@ -1,0 +1,29 @@
+_id: req_d359ab0893c7493bb26c6c9210e68cd9
+type: Request
+parentId: fld_718a622ebf3f4de9bdc09f3d89bcb36e
+modified: 1629824013111
+created: 1629823931979
+url: "{{ base_url }}/workers/testInvalidType::TEST"
+name: Get One Worker Invalid Reference Id Type [/workers/{workerReference}]
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_bdc7ad25d8cf46baaf4954c7786c488a
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_8554994a8030420aad330781f92df28c
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+authentication: {}
+metaSortKey: -1629749432910.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,50 @@
+_id: req_903e349cbfa94e42ac87c16ad74dcaba
+type: Request
+parentId: fld_2f1a300aa36f458e9394f8c3bcbd8a82
+modified: 1630000075802
+created: 1629999938378
+url: "{{ base_url_ph }}\\persons"
+name: Create new person and generate SP_PUID
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+     
+      "birthDate" : "2015-07-20",
+      "personNames" : [ {
+        "nameType" : "Legal",
+        "givenName" : "{{ _.testCaseStartTime }}",
+        "familyName" : "{{ _.testCaseStartTime }}"
+      } ]
+    ,
+      "identifiers" : [
+    	{
+    		"identifierType" : "SIN",
+    		"identifier" : "349562272"
+    	}
+      ]
+    }
+parameters: []
+headers:
+  - id: pair_dbdf58af43e542c79cfd61b02facded2
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_e30535269ec8442b808fbb5e89346c55
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+  - name: Content-Type
+    value: application/json
+    id: pair_3fe25f49a4ae4b81bed04f2fb19385b2
+authentication: {}
+metaSortKey: -1629769212446.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

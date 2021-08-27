@@ -1,0 +1,29 @@
+_id: req_2803f456486147aeb1066042e3067753
+type: Request
+parentId: fld_317fca4c45ab4c5fa5116f49cf513aa9
+modified: 1629829769075
+created: 1629829484550
+url: "{{ base_url }}//functional-hierarchies?pageSize=10&page=1"
+name: Get All Functional Hierarchies
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_adfe2e3bf3f44955bb12ff24132c80c8
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_7f7c860c68c74ac09b5ac58fea73c3d0
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+authentication: {}
+metaSortKey: -1629828730378
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

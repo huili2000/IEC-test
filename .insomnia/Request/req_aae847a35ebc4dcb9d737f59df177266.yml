@@ -1,0 +1,62 @@
+_id: req_aae847a35ebc4dcb9d737f59df177266
+type: Request
+parentId: fld_2f1a300aa36f458e9394f8c3bcbd8a82
+modified: 1630008343687
+created: 1629992589887
+url: "{{ base_url_ph }}/persons"
+name: Create new person with EPBC_USER_ID and EPBC Alternate names
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+     
+      "birthDate" : "2015-07-20",
+      "personNames" : [ {
+        "nameType" : "Legal",
+        "givenName" : "{{ _.testCaseStartTime }}",
+        "familyName" : "{{ _.testCaseStartTime }}"
+      }, {
+      	"nameType" : "Alternate",
+      	"givenName" : "{{ _.testCaseStartTime }}",
+      	"familyName" : "{{ _.testCaseStartTime }}",
+      	"system" : "EPBC"
+    	
+      }]
+    ,
+      
+      "identifiers" : [
+    	{
+    		"identifierType" : "SIN",
+    		"identifier" : "349562272"
+    	},
+    	{
+    		"identifierType" : "USER_ID",
+    		"identifier" :"{{ _.testCaseStartTime }}",
+    		"system" : "EPBC"
+    	}
+      ]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_3e9d3f9033724242bd2c15ec70560b76
+  - id: pair_a36c73b4088147a799c1097db366377e
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_17967d2a117241748f6efd29ecefd839
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+authentication: {}
+metaSortKey: -1629780514847
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

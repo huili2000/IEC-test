@@ -1,0 +1,10 @@
+_id: ut_0dbbc360f234491c9d27465d3e5d0431
+type: UnitTest
+parentId: uts_dbbe5809b59c43da85d9351ea06fcd00
+modified: 1629833516900
+created: 1629765905684
+requestId: req_c85b41ce7a214050ad33d115aa76ccff
+name: Get All Certifications
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

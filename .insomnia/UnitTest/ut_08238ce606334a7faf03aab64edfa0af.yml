@@ -1,0 +1,10 @@
+_id: ut_08238ce606334a7faf03aab64edfa0af
+type: UnitTest
+parentId: uts_b61d7f4a447748cc867b676d78322f5c
+modified: 1629781636754
+created: 1629781632226
+requestId: req_6f69031b42d44e269a270672e6e47ccf
+name: Get Persons
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

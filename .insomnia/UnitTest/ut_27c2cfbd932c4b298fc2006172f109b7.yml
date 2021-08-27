@@ -1,0 +1,10 @@
+_id: ut_27c2cfbd932c4b298fc2006172f109b7
+type: UnitTest
+parentId: uts_4b56f10f52f2499c88a6a2a48ff85367
+modified: 1629832213514
+created: 1629832180116
+requestId: req_05cfeae0e45b45a39b384d5c84c9151f
+name: Get One Functional Hierarchy  Not Exists
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(404);

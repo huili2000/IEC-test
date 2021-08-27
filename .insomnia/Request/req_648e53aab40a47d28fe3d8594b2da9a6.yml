@@ -1,0 +1,31 @@
+_id: req_648e53aab40a47d28fe3d8594b2da9a6
+type: Request
+parentId: fld_513fa3ae662a43f18c25df937d53ae63
+modified: 1629830077176
+created: 1629821665549
+url: "{{ base_url }}/job-positions/{% response 'body',
+  'req_040a7da71c694338bf0754d337f593d0',
+  'b64::JC5wYWdlSXRlbXNbMF0ucG9zaXRpb25JZA==::46b', 'always', 60 %}"
+name: Job One Position Exists [/job-positions/{referenceId}]
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_42693714f5cf446faaeb7a2d840af531
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_5fe7bbedb99646099ad3c94ff37d70c6
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+authentication: {}
+metaSortKey: -1629821190933.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

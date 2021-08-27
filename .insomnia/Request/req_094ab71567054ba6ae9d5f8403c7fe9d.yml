@@ -1,0 +1,34 @@
+_id: req_094ab71567054ba6ae9d5f8403c7fe9d
+type: Request
+parentId: fld_718a622ebf3f4de9bdc09f3d89bcb36e
+modified: 1629829313727
+created: 1629829219680
+url: "{{ base_url }}/workers/employee_id::1189514?includeHistorical=false"
+name: Get Worker - NOT Include History
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - id: pair_bdc7ad25d8cf46baaf4954c7786c488a
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_8554994a8030420aad330781f92df28c
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+  - name: Content-Type
+    value: application/json
+    id: pair_4fabdd14dd0240d29fb58a9548f1ce05
+authentication: {}
+metaSortKey: -1629556665644.1719
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

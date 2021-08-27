@@ -1,0 +1,10 @@
+_id: ut_e21317f509304573a2a5a6994c08b147
+type: UnitTest
+parentId: uts_250f77543a624687a05bd3ed2ace6675
+modified: 1629833278841
+created: 1629832471722
+requestId: req_d359ab0893c7493bb26c6c9210e68cd9
+name: Get One Worker Invalid Reference Id Type
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(400);

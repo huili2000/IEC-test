@@ -1,0 +1,11 @@
+_id: ut_23a3082084504adb884fb9603ec27508
+type: UnitTest
+parentId: uts_5aa74ec18fbe44758010d06da9025553
+modified: 1629839803153
+created: 1629832271167
+requestId: req_edf66c3347a34e9c90fdca62afc5b688
+name: Get One Supervisory Hierarchy Exists
+code: |+
+  const response = await insomnia.send();
+  expect(response.status).to.equal(200);
+

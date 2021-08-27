@@ -1,0 +1,10 @@
+_id: ut_f45fa8065c1342d1836490656f208bae
+type: UnitTest
+parentId: uts_250f77543a624687a05bd3ed2ace6675
+modified: 1629852032093
+created: 1629832909590
+requestId: null
+name: Wait for PM to Finish - Duplicate
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

@@ -1,0 +1,10 @@
+_id: ut_18ad23653c594358add9c1c5717097dc
+type: UnitTest
+parentId: uts_b61d7f4a447748cc867b676d78322f5c
+modified: 1630004731307
+created: 1630004657741
+requestId: req_e230be1a3325498f88f22ac35ffb6656
+name: Generate Employee_ID and UBC_ID Person 1 (merge person)
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

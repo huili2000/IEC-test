@@ -1,0 +1,10 @@
+_id: ut_d94294222fbe4a84bc823179d70b2cbf
+type: UnitTest
+parentId: uts_4b56f10f52f2499c88a6a2a48ff85367
+modified: 1629832190955
+created: 1629832143224
+requestId: req_2803f456486147aeb1066042e3067753
+name: Get All Functional Hierarchies
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);

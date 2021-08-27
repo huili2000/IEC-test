@@ -1,0 +1,31 @@
+_id: req_edf66c3347a34e9c90fdca62afc5b688
+type: Request
+parentId: fld_1990da6ec768463fb91e9af4482c3714
+modified: 1629840526952
+created: 1629829865475
+url: "{{ base_url }}/supervisory-hierarchies/{% response 'body',
+  'req_ddcd9539f82140749e53f9aec7008d4f',
+  'b64::JC5wYWdlSXRlbXNbMF0ucmVmZXJlbmNlSWQ=::46b', 'always', 60 %}"
+name: Get One Supervisory Hierarchies -Exists
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_adfe2e3bf3f44955bb12ff24132c80c8
+    name: x-client-id
+    value: "{{ _['x-client-id'] }}"
+    description: ""
+  - id: pair_7f7c860c68c74ac09b5ac58fea73c3d0
+    name: x-client-secret
+    value: "{{ _['x-client-secret'] }}"
+    description: ""
+authentication: {}
+metaSortKey: -1629828730340.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

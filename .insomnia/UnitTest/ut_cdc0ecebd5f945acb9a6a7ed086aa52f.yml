@@ -1,0 +1,10 @@
+_id: ut_cdc0ecebd5f945acb9a6a7ed086aa52f
+type: UnitTest
+parentId: uts_b61d7f4a447748cc867b676d78322f5c
+modified: 1630004294604
+created: 1630004275501
+requestId: req_47bbf27b97724b3b87b07f019a879d95
+name: Generate Employee_ID with createIfMissing false
+code: |-
+  const response1 = await insomnia.send();
+  expect(response1.status).to.equal(200);
