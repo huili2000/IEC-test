@@ -1,10 +1,10 @@
 _id: ut_d73c5c27f9c74b3f8d35797f88d6c944
 type: UnitTest
 parentId: uts_02e0474c8e2842c5b12641cd7c80839d
-modified: 1630430947683
+modified: 1630431051138
 created: 1629563184200
 requestId: req_29e29ac7396c44409c85693867c57adc
 name: get all academic appointments
 code: |-
   const response1 = await insomnia.send();
-  expect(response1.status).to.equal(201);
+  expect(response1.status).to.equal(200);
